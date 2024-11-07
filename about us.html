@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - T-Shirt Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <style>
+    
+    body, .about-section {
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+
+    .about-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .about-text {
+      font-size: 1.1rem;
+      color: #d1d1d1;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .faq-section {
+      margin-top: 40px;
+      max-width: 800px;
+      margin: 40px auto 0 auto;
+      text-align: left;
+    }
+
+    .faq-title {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .faq-item {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .faq-question {
+      padding: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #f8f9fa;
+    }
+
+    .faq-answer {
+      padding: 15px;
+      display: none;
+      color: #d1d1d1;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">T-Shirt Brand</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about us.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="collections.html">Collection</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact us.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  <section class="about-section">
+    <h1 class="about-title">About Us</h1>
+    <p class="about-text">
+      At T-Shirts Co., we believe that your clothing should be as unique as you are. Our passion for creativity and comfort drives us to provide a wide variety of stylish, high-quality T-shirts that let you express your individuality. From classic designs to bold graphics, our collection is designed with you in mind.
+    </p>
+  </section>
+
+ 
+  <section class="faq-section">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(1)">What materials are used in your T-shirts?</div>
+      <div class="faq-answer" id="answer1">Our T-shirts are made from 100% high-quality cotton to ensure comfort and durability.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(2)">Do you offer international shipping?</div>
+      <div class="faq-answer" id="answer2">Yes, we offer international shipping to select countries. Check our shipping policy for more details.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(3)">How can I track my order?</div>
+      <div class="faq-answer" id="answer3">Once your order is shipped, we’ll send you a tracking link via email so you can follow your package’s journey.</div>
+    </div>
+  </section>
+
+  <script>
+    function toggleAnswer(index) {
+      var answer = document.getElementById('answer' + index);
+      answer.style.display = answer.style.display === 'none' || answer.style.display === '' ? 'block' : 'none';
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+

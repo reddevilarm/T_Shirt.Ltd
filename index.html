@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Shirt Brand</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+    }
+    .carousel-inner, .carousel-item, .carousel img {
+      height: 100vh;
+    }
+    .carousel-item img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      opacity: 0.7;
+    }
+    .hero-content {
+      position: absolute;
+      z-index: 2;
+    }
+    .hero-section h1 {
+      font-size: 3.5rem;
+    }
+    .hero-section p {
+      font-size: 1.25rem;
+      color: #d1d1d1;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">T-Shirt Brand</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="collections.html">Collection</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact us.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section">
+    
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqZSUlzZau-JM4uczT44fjtO3kHYXJR9Fz55s01emSEfeL6E0c_OZkq9AaW9XgYpE2wYE&usqp=CAU" class="d-block w-100" alt="T-shirt 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://m.media-amazon.com/images/I/61By04z9wpL._SX679_.jpg" class="d-block w-100" alt="T-shirt 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://m.media-amazon.com/images/I/61kffU0Hv+L._AC_UL480_FMwebp_QL65_.jpg" class="d-block w-100" alt="T-shirt 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="hero-content">
+      <h1>Express Your Style</h1>
+      <p>Discover T-shirts that speak your personality</p>
+      <a href="collections.html" class="btn btn-primary btn-lg">Shop Now</a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection - T-Shirt Brand</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    .collection-section {
+      padding: 50px 20px;
+    }
+   
+    .featured-products {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .featured-products h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffdd57; 
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #1e1e1e; 
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            padding: 15px;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05); 
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px; 
+            object-fit: cover; 
+            border-radius: 10px;
+        }
+
+        .product-description {
+            margin-top: 15px;
+        }
+
+        .product-description h3 {
+            margin: 10px 0 5px;
+            font-size: 1.5rem;
+            color: #ffdd57; 
+        }
+
+        .product-description p {
+            color: #d3d3d3; 
+        }
+
+        .buy-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ffdd57; 
+            color: #121212; 
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #e6c34d;
+        }
+         .collection-section {
+      padding: 50px 20px;
+    }
+    .card {
+      background-color: #1e1e1e;
+      color: #ffffff;
+      border: none;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">T-Shirt Brand</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="collections.html">Collection</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact us.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="featured-products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+    
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-photo/abstract-print-tshirt-blue-painted-background_506134-41135.jpg" alt="Classic Tee" class="product-image">
+            <div class="product-description">
+                <h3>Classic Tee </h3>
+                <p>A timeless T-shirt with a comfortable fit.</p>
+                <button class="buy-button" onclick="buyNow('Classic Tee')">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.styched.in/cdn/shop/files/wolf.jpg?v=1715761561&width=533" alt="Graphic Print Tee" class="product-image">
+            <div class="product-description">
+                <h3>Graphic Print Tee</h3>
+                <p>Showcase your style with this trendy graphic print.</p>
+                <button class="buy-button" onclick="buyNow('Graphic Print Tee')">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-vector/vintage-vibes-crafting-timeless-retro-summer-tshirt-vector-illustrations_881299-46314.jpg" alt="Vintage Vibes" class="product-image">
+            <div class="product-description">
+                <h3>Vintage Vibes</h3>
+                <p>A retro T-shirt for a classic look.</p>
+                <button class="buy-button" onclick="buyNow('Vintage Vibes')">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.teez.in/cdn/shop/products/18_27845807-bef9-4837-87fa-244df55de21f_large.jpg?v=1658812661" alt="Bold Statement" class="product-image">
+            <div class="product-description">
+                <h3>Bold Statement</h3>
+                <p>Make a statement with this unique design.</p>
+                <button class="buy-button" onclick="buyNow('Bold Statement')">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/71jH4ztAcpL._SY879_.jpg" alt="Vintage Vibes" class="product-image">
+          <div class="product-description">
+              <h3>RodZen Men Round Neck Oversized All Over Printed T-shirt</h3>
+              <p>A retro T-shirt for a classic look.</p>
+              <button class="buy-button" onclick="buyNow('Vintage Vibes')">Buy Now</button>
+          </div>
+      </div>
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/513WTc48GCL._AC_UL480_FMwebp_QL65_.jpg" alt="Vintage Vibes" class="product-image">
+        <div class="product-description">
+            <h3>ADRO
+              Men's Regular Fit T-Shirt</h3>
+            <p>A retro T-shirt for a classic look.</p>
+            <button class="buy-button" onclick="buyNow('Vintage Vibes')">Buy Now</button>
+        </div>
+    </div>
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61kffU0Hv+L._AC_UL480_FMwebp_QL65_.jpg" alt="Vintage Vibes" class="product-image">
+      <div class="product-description">
+          <h3>Fabflee
+            Women's Cartoon Regular Fit T-Shirt</h3>
+          <p>A retro T-shirt for a classic look.</p>
+          <button class="buy-button" onclick="buyNow('Vintage Vibes')">Buy Now</button>
+      </div>
+  </div>
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/61By04z9wpL._SX679_.jpg" alt="Vintage Vibes" class="product-image">
+    <div class="product-description">
+        <h3>JUNEBERRY Cotton Blend Tie & Dye Round Neck Half Sleeve Regular Fit Printed T-Shirt for Women & Girls</h3>
+        <p>A retro T-shirt for a classic look.</p>
+        <button class="buy-button" onclick="buyNow('Vintage Vibes')">Buy Now</button>
+    </div>
+</div>
+    </div>
+</section>
+  
+<script>
+  function buyNow(productName) {
+      alert("You clicked Buy Now for " + productName);
+  }
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
